@@ -1,0 +1,21 @@
+$min-xl: 600rem;
+$min-lg: 45rem;
+$min-md: 38.4rem;
+$min-sm: 25rem;
+
+body {
+    margin: 0;
+    background-color: var(--ligth-gray);
+    font-family: Proxima Nova,-apple-system,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif;
+}
+
+.container {
+    padding: 0 150px 0 150px;
+
+    @media screen and (max-width: $min-md) {
+        padding: 0 40px 0 40px;
+    }
+    @media screen and (max-width: $min-sm) {
+        padding: 0 10px 0 10px;
+    }
+}

@@ -1,0 +1,30 @@
+<div *ngIf="itemsInfo" class="continer-card">
+    <div *ngFor="let item of itemsInfo.items | slice:0:4; let i = index">
+        <div
+          id="card-items-{{ i }}"
+          class="content-card"
+          (click)="goProductDetail(item)"
+        >
+          <div class="eight-column">
+            <img [src]="item.picture" />
+            <div class="info-product">
+              <p class="title">
+                {{
+                  item.price.amount | currency: item.price.currency:"symbol-narrow"
+                }}
+              </p>
+              <p class="description">{{ item.title }}</p>
+            </div>
+            <div class="two-column">
+              <p class="location">Capital Federal</p>
+            </div>
+          </div>
+        </div>
+        <div class="separator">
+          <hr />
+        </div>
+    </div>
+</div>
+<div *ngIf="!itemsInfo">
+  <h5>Bienvenido busca el producto de tú interés...</h5>
+</div>
