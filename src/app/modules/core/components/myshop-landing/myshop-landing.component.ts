@@ -7,13 +7,13 @@ const SS_VALUE_TOKEN =
   'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiRWRpc3NvbiIsImxhc3RuYW1lIjoiUnVpeiJ9.NmNt3kHc9VqHzfYAdTcKl5sGVZg4EY555LRWZEbtCes';
 
 @Component({
-  selector: 'meli-landing',
+  selector: 'myshop-landing',
   template: `
-    <meli-header></meli-header>
+    <myshop-header></myshop-header>
   `,
-  styleUrls: ['./meli-landing.component.scss'],
+  styleUrls: ['./myshop-landing.component.scss'],
 })
-export class MeliLandingComponent implements OnInit {
+export class MyshopLandingComponent implements OnInit {
   public itemsInfo!: IItemsResponse;
 
   constructor(private sessionStorageService: SessionStorageService) {}

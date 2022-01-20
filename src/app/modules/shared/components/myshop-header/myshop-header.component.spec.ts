@@ -4,23 +4,23 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { Router } from '@angular/router';
 import { ToastrModule } from 'ngx-toastr';
-import { MeliHeaderComponent } from './meli-header.component';
+import { MyshopHeaderComponent } from './myshop-header.component';
 
 describe('HeaderComponent', () => {
-  let component: MeliHeaderComponent;
-  let fixture: ComponentFixture<MeliHeaderComponent>;
+  let component: MyshopHeaderComponent;
+  let fixture: ComponentFixture<MyshopHeaderComponent>;
   const mockRouter = { navigate: jasmine.createSpy('navigate') };
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [MeliHeaderComponent],
+      declarations: [MyshopHeaderComponent],
       imports: [ToastrModule.forRoot(), HttpClientModule, HttpClientTestingModule, ReactiveFormsModule, FormsModule],
       providers: [{ provide: Router, useValue: mockRouter }],
     }).compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(MeliHeaderComponent);
+    fixture = TestBed.createComponent(MyshopHeaderComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

@@ -3,22 +3,22 @@ import { HttpClientTestingModule } from '@angular/common/http/testing';
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { ToastrModule } from 'ngx-toastr';
 import { SessionStorageService } from 'src/app/modules/shared/service/session-storage.service';
-import { MeliLandingComponent } from './meli-landing.component';
+import { MyshopLandingComponent } from './myshop-landing.component';
 
-describe('MeliLandingComponent', () => {
-  let component: MeliLandingComponent;
-  let fixture: ComponentFixture<MeliLandingComponent>;
+describe('MyshopLandingComponent', () => {
+  let component: MyshopLandingComponent;
+  let fixture: ComponentFixture<MyshopLandingComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [MeliLandingComponent],
+      declarations: [MyshopLandingComponent],
       imports: [ToastrModule.forRoot(), HttpClientModule, HttpClientTestingModule],
       providers: [SessionStorageService],
     }).compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(MeliLandingComponent);
+    fixture = TestBed.createComponent(MyshopLandingComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

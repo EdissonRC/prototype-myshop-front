@@ -25,7 +25,7 @@ module.exports = function (config) {
       suppressAll: true, // removes the duplicated traces
     },
     covergeIstanbulReport: {
-      dir: require("path").join(__dirname, "./coverage/prototype-myshopx"),
+      dir: require("path").join(__dirname, "./coverage/prototype-myshop"),
       reports: ["html", "lcovonly", "test-summary"],
       fixWebpackSourcePaths: true,
       thresholds: {
@@ -36,7 +36,7 @@ module.exports = function (config) {
       },
     },
     coverageReporter: {
-      dir: require("path").join(__dirname, "./coverage/prototype-myshopx"),
+      dir: require("path").join(__dirname, "./coverage/prototype-myshop"),
       subdir: ".",
       reporters: [{ type: "html" }, { type: "text-summary" }],
     },

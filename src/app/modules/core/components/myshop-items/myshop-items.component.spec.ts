@@ -5,23 +5,23 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ToastrModule } from 'ngx-toastr';
 import { of } from 'rxjs';
 import { ItemService } from 'src/app/modules/base/services/items/item.service';
-import { MeliItemsComponent } from './meli-items.component';
+import { MyshopItemsComponent } from './myshop-items.component';
 
-describe('MeliItemsComponent', () => {
-  let component: MeliItemsComponent;
-  let fixture: ComponentFixture<MeliItemsComponent>;
+describe('MyshopItemsComponent', () => {
+  let component: MyshopItemsComponent;
+  let fixture: ComponentFixture<MyshopItemsComponent>;
   let itemService: any;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       imports: [ToastrModule.forRoot(), HttpClientModule, HttpClientTestingModule, ReactiveFormsModule, FormsModule],
-      declarations: [MeliItemsComponent],
+      declarations: [MyshopItemsComponent],
       providers: [ItemService],
     }).compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(MeliItemsComponent);
+    fixture = TestBed.createComponent(MyshopItemsComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
