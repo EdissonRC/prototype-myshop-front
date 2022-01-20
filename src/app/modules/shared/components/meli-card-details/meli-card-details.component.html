@@ -1,0 +1,21 @@
+<div *ngIf="itemInfo" class="continer-card">
+    <div class="content-card">
+        <div class="seven-column">
+            <img [src]="itemInfo.item.picture">
+            <div class="info-product">
+                <p class="type">{{itemInfo.item.condition === 'new'? 'Nuevo': 'Usado'}} -
+                    {{itemInfo.item.sold_quantity}} vendidos</p>
+                <h2>{{itemInfo.item.title}}</h2>
+                <p class="amount">
+                    {{itemInfo.item.price.amount | currency : itemInfo.item.price.currency:'symbol-narrow'}}</p>
+                <div class="button-buy">
+                    <button>Comprar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="content-card description">
+        <p>Descripción del producto</p>
+        <h4>{{itemInfo.item.description}}</h4>
+    </div>
+</div>

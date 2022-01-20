@@ -1,0 +1,24 @@
+{
+  "bracketSpacing": true,
+  "trailingComma": "all",
+  "overrides": [
+      {
+        "files": "src/**/*.ts",
+        "options": {
+          "parser": "typescript"
+        }
+      },
+      {
+        "files": "src/**/*.scss",
+        "options": {
+          "parser": "scss"
+        }
+      }
+    ],
+  "parser": "typescript",
+  "arrowParens": "always",
+  "requirePragma": false,
+  "printWidth": 140,
+  "htmlWhitespaceSensitivity": "ignore",
+  "singleQuote": true
+}
