@@ -3,11 +3,11 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'meli-header',
-  templateUrl: './meli-header.component.html',
-  styleUrls: ['./meli-header.component.scss'],
+  selector: 'myshop-header',
+  templateUrl: './myshop-header.component.html',
+  styleUrls: ['./myshop-header.component.scss'],
 })
-export class MeliHeaderComponent implements OnInit {
+export class MyshopHeaderComponent implements OnInit {
   @Output() responseItems = new EventEmitter<any>();
 
   public applicationForm!: FormGroup;

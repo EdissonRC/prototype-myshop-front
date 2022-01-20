@@ -3,11 +3,11 @@ import { ItemService } from 'src/app/modules/base/services/items/item.service';
 import { IItemsResponse } from '../../interfaces/items-response';
 
 @Component({
-  selector: 'meli-items',
-  templateUrl: './meli-items.component.html',
-  styleUrls: ['./meli-items.component.scss'],
+  selector: 'myshop-items',
+  templateUrl: './myshop-items.component.html',
+  styleUrls: ['./myshop-items.component.scss'],
 })
-export class MeliItemsComponent implements OnInit {
+export class MyshopItemsComponent implements OnInit {
   public itemsInfo!: IItemsResponse;
 
   constructor(private itemService: ItemService) {}

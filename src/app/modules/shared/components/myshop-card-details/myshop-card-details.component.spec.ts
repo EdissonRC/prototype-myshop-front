@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { MeliCardDetailsComponent } from './meli-card-details.component';
+import { MyshopCardDetailsComponent } from './myshop-card-details.component';
 
-describe('MeliCardDetailsComponent', () => {
-  let component: MeliCardDetailsComponent;
-  let fixture: ComponentFixture<MeliCardDetailsComponent>;
+describe('MyshopCardDetailsComponent', () => {
+  let component: MyshopCardDetailsComponent;
+  let fixture: ComponentFixture<MyshopCardDetailsComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [MeliCardDetailsComponent],
+      declarations: [MyshopCardDetailsComponent],
     }).compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(MeliCardDetailsComponent);
+    fixture = TestBed.createComponent(MyshopCardDetailsComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

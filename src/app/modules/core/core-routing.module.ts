@@ -1,21 +1,21 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { MeliDetailProductComponent } from './components/meli-detail-product/meli-detail-product.component';
-import { MeliItemsComponent } from './components/meli-items/meli-items.component';
-import { MeliLandingComponent } from './components/meli-landing/meli-landing.component';
+import { MyshopDetailProductComponent } from './components/myshop-detail-product/myshop-detail-product.component';
+import { MyshopItemsComponent } from './components/myshop-items/myshop-items.component';
+import { MyshopLandingComponent } from './components/myshop-landing/myshop-landing.component';
 
 const routes: Routes = [
   {
     path: '',
-    component: MeliLandingComponent,
+    component: MyshopLandingComponent,
   },
   {
     path: 'items/:id',
-    component: MeliDetailProductComponent,
+    component: MyshopDetailProductComponent,
   },
   {
     path: 'items',
-    component: MeliItemsComponent,
+    component: MyshopItemsComponent,
   },
 ];
 

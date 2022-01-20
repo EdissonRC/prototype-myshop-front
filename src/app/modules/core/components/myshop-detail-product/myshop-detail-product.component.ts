@@ -4,11 +4,11 @@ import { ItemService } from 'src/app/modules/base/services/items/item.service';
 import { IItemResponse } from '../../interfaces/item-response';
 
 @Component({
-  selector: 'meli-detail-product',
-  templateUrl: './meli-detail-product.component.html',
-  styleUrls: ['./meli-detail-product.component.scss'],
+  selector: 'myshop-detail-product',
+  templateUrl: './myshop-detail-product.component.html',
+  styleUrls: ['./myshop-detail-product.component.scss'],
 })
-export class MeliDetailProductComponent implements OnInit {
+export class MyshopDetailProductComponent implements OnInit {
   public item!: IItemResponse;
 
   constructor(private activeRoute: ActivatedRoute, private itemService: ItemService) {}
