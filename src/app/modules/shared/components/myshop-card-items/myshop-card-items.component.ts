@@ -3,11 +3,11 @@ import { Router } from '@angular/router';
 import { IItemsResponse } from 'src/app/modules/core/interfaces/items-response';
 
 @Component({
-  selector: 'meli-card-items',
-  templateUrl: './meli-card-items.component.html',
-  styleUrls: ['./meli-card-items.component.scss'],
+  selector: 'myshop-card-items',
+  templateUrl: './myshop-card-items.component.html',
+  styleUrls: ['./myshop-card-items.component.scss'],
 })
-export class MeliCardItemsComponent {
+export class MyshopCardItemsComponent {
   @Input() public itemsInfo!: IItemsResponse;
 
   constructor(private route: Router) {}

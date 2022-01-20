@@ -1,14 +1,14 @@
 import { CommonModule } from '@angular/common';
 import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { SharedModule } from '../shared/shared.module';
-import { MeliDetailProductComponent } from './components/meli-detail-product/meli-detail-product.component';
-import { MeliItemsComponent } from './components/meli-items/meli-items.component';
-import { MeliLandingComponent } from './components/meli-landing/meli-landing.component';
+import { MyshopDetailProductComponent } from './components/myshop-detail-product/myshop-detail-product.component';
+import { MyshopItemsComponent } from './components/myshop-items/myshop-items.component';
+import { MyshopLandingComponent } from './components/myshop-landing/myshop-landing.component';
 import { CoreRoutingModule } from './core-routing.module';
 
 @NgModule({
-  declarations: [MeliLandingComponent, MeliDetailProductComponent, MeliItemsComponent],
-  exports: [MeliLandingComponent, MeliDetailProductComponent, MeliItemsComponent],
+  declarations: [MyshopLandingComponent, MyshopDetailProductComponent, MyshopItemsComponent],
+  exports: [MyshopLandingComponent, MyshopDetailProductComponent, MyshopItemsComponent],
   imports: [CommonModule, CoreRoutingModule, SharedModule],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })

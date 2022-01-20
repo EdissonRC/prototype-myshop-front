@@ -5,17 +5,17 @@ import { ActivatedRoute } from '@angular/router';
 import { ToastrModule } from 'ngx-toastr';
 import { of } from 'rxjs';
 import { ItemService } from 'src/app/modules/base/services/items/item.service';
-import { MeliDetailProductComponent } from './meli-detail-product.component';
+import { MyshopDetailProductComponent } from './myshop-detail-product.component';
 
-describe('MeliDetailProductComponent', () => {
-  let component: MeliDetailProductComponent;
-  let fixture: ComponentFixture<MeliDetailProductComponent>;
+describe('MyshopDetailProductComponent', () => {
+  let component: MyshopDetailProductComponent;
+  let fixture: ComponentFixture<MyshopDetailProductComponent>;
   let itemService: any;
   const activatedRoute = ({ data: of({ label: 'hello' }) } as any) as ActivatedRoute;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [MeliDetailProductComponent],
+      declarations: [MyshopDetailProductComponent],
       imports: [ToastrModule.forRoot(), HttpClientModule, HttpClientTestingModule],
       providers: [
         ItemService,
@@ -28,7 +28,7 @@ describe('MeliDetailProductComponent', () => {
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(MeliDetailProductComponent);
+    fixture = TestBed.createComponent(MyshopDetailProductComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

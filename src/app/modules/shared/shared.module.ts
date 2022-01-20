@@ -3,13 +3,13 @@ import { HttpClientModule } from '@angular/common/http';
 import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BaseModule } from '../base/base.module';
-import { MeliCardDetailsComponent } from './components/meli-card-details/meli-card-details.component';
-import { MeliCardItemsComponent } from './components/meli-card-items/meli-card-items.component';
-import { MeliHeaderComponent } from './components/meli-header/meli-header.component';
+import { MyshopCardDetailsComponent } from './components/myshop-card-details/myshop-card-details.component';
+import { MyshopCardItemsComponent } from './components/myshop-card-items/myshop-card-items.component';
+import { MyshopHeaderComponent } from './components/myshop-header/myshop-header.component';
 
 @NgModule({
-  declarations: [MeliHeaderComponent, MeliCardItemsComponent, MeliCardDetailsComponent],
-  exports: [MeliHeaderComponent, MeliCardItemsComponent, MeliCardDetailsComponent],
+  declarations: [MyshopHeaderComponent, MyshopCardItemsComponent, MyshopCardDetailsComponent],
+  exports: [MyshopHeaderComponent, MyshopCardItemsComponent, MyshopCardDetailsComponent],
   imports: [CommonModule, ReactiveFormsModule, FormsModule, HttpClientModule, BaseModule],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })

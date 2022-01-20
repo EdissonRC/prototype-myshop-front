@@ -3,24 +3,24 @@ import { HttpClientTestingModule } from '@angular/common/http/testing';
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { Router } from '@angular/router';
 import { ToastrModule } from 'ngx-toastr';
-import { MeliCardItemsComponent } from './meli-card-items.component';
+import { MyshopCardItemsComponent } from './myshop-card-items.component';
 
-describe('MeliCardItemsComponent', () => {
-  let component: MeliCardItemsComponent;
-  let fixture: ComponentFixture<MeliCardItemsComponent>;
+describe('MyshopCardItemsComponent', () => {
+  let component: MyshopCardItemsComponent;
+  let fixture: ComponentFixture<MyshopCardItemsComponent>;
 
   const mockRouter = { navigate: jasmine.createSpy('navigate') };
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [MeliCardItemsComponent],
+      declarations: [MyshopCardItemsComponent],
       imports: [ToastrModule.forRoot(), HttpClientModule, HttpClientTestingModule],
       providers: [{ provide: Router, useValue: mockRouter }],
     }).compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(MeliCardItemsComponent);
+    fixture = TestBed.createComponent(MyshopCardItemsComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
