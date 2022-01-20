@@ -1,6 +1,6 @@
-# Mercado Libre
+# My Shop
 
-Este proyecto es un test práctico para aspirantes al área de front-end de Mercado Libre.
+Este proyecto es un test práctico para aspirantes al área de front-end de My shop.
 
 ## Funcionalidad de la aplicación
 
